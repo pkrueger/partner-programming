@@ -1,0 +1,60 @@
+:root {
+  --head-bg: #111111;
+  --primary-white: #f7f7f7;
+  --primary-white-opacity: rgb(247, 247, 247, .75);
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 1rem;
+}
+
+.primary-white {
+  color: var(--primary-white);
+}
+
+.primary-white-opacity {
+  color: var(--primary-white-opacity);
+}
+
+.intro-color {
+  background-color: var(--head-bg);
+}
+
+.horse-logo-large {
+  font-size: 8rem;
+}
+
+.welcome {
+  text-transform: capitalize;
+}
+
+.get-started {
+  text-transform: uppercase;
+  background-color: #7CC576;
+  color: var(--primary-white);
+  border-radius: .15rem;
+}
+
+.navbar.bg-light {
+  padding: 1rem;
+}
+
+.nav-horse {
+  padding-left: 6rem;
+  font-size: 1.5rem;
+}
+
+#navbarNav .navbar-nav {
+  flex-direction: row;
+  gap: 1.5rem;
+  text-transform: uppercase;
+}
+
+.last-nav {
+  padding-right: 6rem;
+}
