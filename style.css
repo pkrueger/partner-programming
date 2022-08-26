@@ -1,9 +1,11 @@
 :root {
   --head-bg: #111111;
-  --primary-white: #f7f7f7;
-  --primary-white-opacity: rgb(247, 247, 247, .75);
-  --primary-black-opacity: rgb(18, 18, 18, .75);
+  --theme-white: #f7f7f7;
+  --theme-white-opacity: rgb(247, 247, 247, .75);
+  --theme-black-opacity: rgb(18, 18, 18, .65);
+  --theme-green: #7CC576;
   --grey-white: #f3f3f3;
+  --small-shadow: #F5F5F5;
 }
 
 .header-content {
@@ -15,12 +17,24 @@
   gap: 1rem;
 }
 
-.primary-white {
-  color: var(--primary-white);
+.theme-white {
+  color: var(--theme-white);
 }
 
-.primary-white-opacity {
-  color: var(--primary-white-opacity);
+.theme-grey-white-bg {
+  background-color: var(--grey-white);
+}
+
+.theme-white-bg {
+  background-color: var(--theme-white);
+}
+
+.theme-white-opacity {
+  color: var(--theme-white-opacity);
+}
+
+.theme-black-opacity {
+  color: var(--theme-black-opacity);
 }
 
 .intro-color {
@@ -37,13 +51,15 @@
 
 .get-started {
   text-transform: uppercase;
-  background-color: #7CC576;
-  color: var(--primary-white);
+  background-color: var(--theme-green);
+  color: var(--theme-white);
   border-radius: .15rem;
 }
 
-.navbar.bg-light {
+.navbar.theme-white {
   padding: 1rem;
+  box-shadow: 0 1rem .8rem -.8rem var(--small-shadow);
+  background-color: white;
 }
 
 .nav-horse {
@@ -61,6 +77,10 @@
   padding-right: 6rem;
 }
 
+.image-shadow {
+  box-shadow: 0 0 .5rem .01rem var(--small-shadow);
+}
+
 .double-check {
   list-style-image: url('check-double-solid.svg');
 }
@@ -69,19 +89,134 @@
   padding-bottom: 1rem;
 }
 
-.about-us {
+.double-check li::marker {
+  font-size: 2rem;
+}
+
+.section-head {
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 5rem 0;
 }
 
-.about-color {
-  color: var(--primary-black-opacity)
+.section-head p:first-of-type {
+  color: var(--theme-black-opacity)
 }
 
-.services-icon {
-  margin-top: 0;
-  padding: 0;
+.theme-green {
+  color: var(--theme-green);
+}
 
+.services-two {
+  margin: 7rem 0;
+}
+
+.business-man {
+  width: 25vw;
+}
+
+.service-card {
+  transition: box-shadow .25s ease-in-out;
+}
+
+.service-card h4 {
+  transition: color .25s ease-in-out;
+}
+
+.service-card:hover {
+  box-shadow: 0 0 .5rem .01rem var(--small-shadow);
+}
+
+.service-card:hover h4 {
+  color: var(--theme-green);
+}
+
+.number-list {
+  color: var(--theme-green);
+}
+
+.bigger-padding {
+  padding-left: 6rem;
+}
+
+.accordion-header {
+  color: var(--theme-green);
+}
+
+.image-buildings {
+  background-image: url(buildings.jpg);
+  background-size: cover;
+}
+
+.black-screen {
+  background-color: var(--theme-black-opacity);
+}
+
+.quote-container {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  outline: .1rem solid var(--theme-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--theme-green);
+}
+
+.picture-container img {
+  border-radius: 50%;
+  outline: .2rem solid var(--grey-white);
+  width: 5rem;
+}
+
+.price-card {
+  border-radius: 1rem;
+  box-shadow: 0 0 .5rem -.4rem var(--head-bg);
+  transition: outline .05s ease-in-out;
+  padding: 5rem;
+}
+
+.price-card:hover {
+  outline: .2rem solid var(--theme-green);
+}
+
+.price-people {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dollar-sign {
+  color: black;
+  font-weight: 700;
+}
+
+.big-numbers {
+  font-size: 4rem;
+  color: black;
+}
+
+.buy-now {
+  margin-top: 2rem;
+}
+
+.recommended {
+  background-color: #a0e09a29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  color: #7CC576;
+  font-weight: bold;
+  padding: .5rem 2rem;
+}
+
+.recommended p {
+  margin: 0;
+  padding: 0;
+}
+
+.card-recommended {
+  padding: .5rem 5rem 5rem 5rem
 }

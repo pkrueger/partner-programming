@@ -17,12 +17,14 @@
     <!-- SECTION intro pic-->
     <section class="container-fluid intro-color">
       <div class="row">
-        <div class="col primary-white header-content">
+        <div class="col theme-white header-content">
           <i class="fa-solid fa-horse-head horse-logo-large"></i>
           <h1 class="welcome">welcome to knight studios</h1>
-          <p class="primary-white-opacity">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, consequuntur.
+          <p class="theme-white-opacity">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, consequuntur.
           </p>
-          <button class="btn get-started">get started</button>
+          <a href="#about">
+            <button class="btn get-started">get started</button>
+          </a>
         </div>
       </div>
     </section>
@@ -32,7 +34,7 @@
 
     <!-- SECTION navbar -->
     <section>
-      <nav class="navbar bg-light">
+      <nav class="navbar theme-white">
         <div class="container-fluid">
           <a class="navbar-brand nav-horse" href="#">
             <i class="fa-solid fa-horse-head"></i>
@@ -46,13 +48,13 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item last-nav">
                 <a class="nav-link" href="#">Subscribe</a>
@@ -71,16 +73,15 @@
     <!-- SECTION About Us and Services -->
     <section class="container">
       <div class="row">
-        <div class="col d-flex about-us">
+        <div class="col d-flex section-head">
           <h2 id="about">ABOUT US</h2>
-          <p class="about-color">Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-6 d-flex justify-content-center">
-          <img src="//thiscatdoesnotexist.com" alt="" class="img-fluid">
-
+          <img src="//thiscatdoesnotexist.com" alt="kitty" class="img-fluid image-shadow">
         </div>
         <div class="col-md-6">
           <h3>Lorem ipsum dolor sit.</h3>
@@ -106,64 +107,75 @@
       </div>
 
       <div class="row">
-        <div class="col d-flex about-us">
-          <h2>SERVICES</h2>
-          <p class="about-color">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veritatis aut a
+        <div class="col d-flex section-head">
+          <h2 id="services">SERVICES</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veritatis aut a
             alias repellendus
             incidunt?</p>
         </div>
       </div>
 
-
-
       <div class="row">
         <div class="col-md-6 d-flex flex-column gap-3 align-self-center">
-
-          <div class="d-flex gap-2">
-            <i class="fa-solid fa-newspaper fs-2 mt-2"></i>
+          <div class="d-flex gap-4">
+            <i class="fa-solid fa-newspaper fs-2 mt-2 theme-green"></i>
             <div>
-              <h4 class="services-icon">Est labore ad</h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eius?</p>
+              <h4>Est labore ad</h4>
+              <p class="theme-black-opacity">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eius?
+              </p>
             </div>
           </div>
-
-          <div class="d-flex gap-2">
-            <i class="fa-solid fa-cube fs-2 mt-2"></i>
+          <div class="d-flex gap-4">
+            <i class="fa-solid fa-cube fs-2 mt-2 theme-green"></i>
             <div>
-              <h4 class="services-icon">Est labore ad</h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eius?</p>
+              <h4>Est labore ad</h4>
+              <p class="theme-black-opacity">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eius?
+              </p>
             </div>
           </div>
-
-          <div class="d-flex gap-2">
-            <i class="fa-solid fa-images fs-2 mt-2"></i>
+          <div class="d-flex gap-4">
+            <i class="fa-solid fa-images fs-2 mt-2 theme-green"></i>
             <div>
-              <h4 class="services-icon">Est labore ad</h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eius?</p>
+              <h4>Est labore ad</h4>
+              <p class="theme-black-opacity">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eius?
+              </p>
             </div>
           </div>
-
-          <div class="d-flex gap-2">
-            <i class="fa-solid fa-shield-halved fs-2 mt-2"></i>
+          <div class="d-flex gap-4">
+            <i class="fa-solid fa-shield-halved fs-2 mt-2 theme-green"></i>
             <div>
-              <h4 class="services-icon">Est labore ad</h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eius?</p>
+              <h4>Est labore ad</h4>
+              <p class="theme-black-opacity">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, eius?
+              </p>
             </div>
           </div>
-
-
-
         </div>
         <div class="col-md-6">
           <img src="//thiscatdoesnotexist.com" alt="">
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
 
+      <div class="row services-two">
+        <div class="col-md-6 d-flex align-items-center">
+          <img src="man.png" alt="business man" class="img-fluid business-man">
         </div>
-        <div class="col-md-6">
-
+        <div class="col-md-6 d-flex flex-column gap-4">
+          <div class="p-3 service-card">
+            <h4>Lorem, ipsum dolor.</h4>
+            <p class="theme-black-opacity">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ex?</p>
+          </div>
+          <div class="p-3 service-card">
+            <h4>Lorem ipsum dolor sit.</h4>
+            <p class="theme-black-opacity">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="p-3 service-card">
+            <h4>Lorem, ipsum dolor.</h4>
+            <p class="theme-black-opacity">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi?</p>
+          </div>
+          <div class="p-3 service-card">
+            <h4>Lorem, ipsum dolor.</h4>
+            <p class="theme-black-opacity">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, cumque?</p>
+          </div>
         </div>
       </div>
     </section>
@@ -171,19 +183,96 @@
 
 
 
-    <!-- SECTION cool video and quote -->
+    <!-- SECTION cool video-->
     <section class="container-fluid">
-      <div class="row">
-        <div class="col-md-7">
+      <div class="row theme-grey-white-bg bigger-padding">
+        <div class="col-md-6 pt-5">
+          <h2>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit. Molestiae, corporis!</strong></h2>
+          <p class="theme-black-opacity">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque dolor quisquam
+            magni consectetur veritatis rem doloribus dolore odit id quo.</p>
+
+
+
+          <div class="accordion accordion-flush d-flex flex-column gap-3" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <span class="number-list">01</span>
+                  <pre> </pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                  voluptate.
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas itaque beatae nisi ratione
+                  consequuntur dolor saepe recusandae temporibus sed eligendi quod ab at expedita, earum maxime
+                  similique magnam nulla harum!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <span class="number-list">02</span>
+                  <pre> </pre>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, corporis.
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat quod sapiente molestiae
+                  consectetur dignissimos quos possimus, labore corrupti saepe laboriosam reiciendis aperiam assumenda
+                  nulla voluptatibus reprehenderit quibusdam aliquid minus!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <span class="number-list">03</span>
+                  <pre> </pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, blanditiis?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium earum alias debitis nulla
+                  quibusdam, voluptates facilis, itaque quasi iure veritatis aliquid numquam vitae impedit cupiditate
+                  fugit quos adipisci fugiat autem.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
 
         </div>
-        <div class="col-md-5">
-
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="//thiscatdoesnotexist.com" alt="kitty" class="img-fluid">
         </div>
       </div>
-      <div class="row">
-        <div class="col">
+    </section>
 
+    <!-- SECTION cool quote -->
+    <section class="container-fluid image-buildings theme-white">
+      <div class="row pt-5 black-screen">
+        <div class="col d-flex justify-content-center align-items-center flex-column py-5">
+          <div class="quote-container mb-3">
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+          <p class="mb-4">
+            <em>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur ea dolorum impedit ad ipsam! Aperiam
+              ipsa eligendi debitis? Ipsam, quisquam.</em>
+          </p>
+          <div class="picture-container mb-2">
+            <img src="//thiscatdoesnotexist.com" alt="kitty" class="img-fluid">
+          </div>
+          <p class="mb-0 fs-4"><strong>Cool Name</strong></p>
+          <p class="pb-5">Freelancer</p>
         </div>
       </div>
     </section>
@@ -192,27 +281,57 @@
 
 
     <!-- SECTION Pricing and Contact -->
-    <section class="container">
+    <section class="container-fluid theme-grey-white-bg px-5">
       <div class="row">
-        <div class="col"></div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-
-        </div>
-        <div class="col-md-4">
-
-        </div>
-        <div class="col-md-4">
-
+        <div class="col d-flex section-head">
+          <h2 id="pricing">PRICING</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-
+      <div class="row gap-5 justify-content-center">
+        <div class="col-md-3 d-flex flex-column gap-4 align-items-center theme-white-bg price-card">
+          <h5 class="price-people">Free</h5>
+          <p class="theme-black-opacity"><span class="dollar-sign">$</span><span class="big-numbers">0</span>/ month</p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum dolor.</p>
+          <p>Lorem ipsum dolor sit.</p>
+          <p class="text-decoration-line-through theme-black-opacity">Lorem, ipsum.</p>
+          <p class="text-decoration-line-through theme-black-opacity">Lorem, ipsum dolor.</p>
+          <button class="btn get-started buy-now">Buy Now</button>
+        </div>
+        <div class="col-md-3 d-flex flex-column gap-4 align-items-center theme-white-bg price-card card-recommended">
+          <div class="recommended">
+            <p>RECOMMENDED</p>
+          </div>
+          <h5 class="price-people">Business</h5>
+          <p class="theme-black-opacity"><span class="dollar-sign">$</span><span class="big-numbers">19</span>/ month
+          </p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum dolor.</p>
+          <p>Lorem ipsum dolor sit.</p>
+          <p>Lorem, ipsum.</p>
+          <p class="text-decoration-line-through theme-black-opacity">Lorem, ipsum dolor.</p>
+          <button class="btn get-started buy-now">Buy Now</button>
+        </div>
+        <div class="col-md-3 d-flex flex-column gap-4 align-items-center theme-white-bg price-card">
+          <h5 class="price-people">Developer</h5>
+          <p class="theme-black-opacity"><span class="dollar-sign">$</span><span class="big-numbers">29</span>/ month
+          </p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum dolor.</p>
+          <p>Lorem ipsum dolor sit.</p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum dolor.</p>
+          <button class="btn get-started buy-now">Buy Now</button>
         </div>
       </div>
       <div class="row">
+        <div class="col d-flex section-head">
+          <h2 id="contact">CONTACT</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="row gap-3 justify-content-center">
         <div class="col-md-4">
 
         </div>
